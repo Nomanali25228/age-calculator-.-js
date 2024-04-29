@@ -1,0 +1,71 @@
+* {
+    font-family: cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(100, 217, 225), rgb(14, 232, 174));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    width: fit-content;
+    padding: 50px;
+    box-shadow: 5px 5px 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Take full width by default */
+}
+
+h1 {
+    color: hotpink;
+}
+
+input[type="button"] {
+    background-color: aqua;
+}
+
+label {
+    color: blue;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    * {
+        font-family: bold;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .box {
+        padding: 20px;
+    }
+}
+
+/* For screens smaller than 400px */
+@media only screen and (max-width: 400px) {
+    * { 
+        font-family: bold;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .box {
+        padding: 10px;
+    }
+    input {
+        padding: 8px;
+    }
+}
